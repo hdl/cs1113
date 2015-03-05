@@ -40,7 +40,7 @@ double cal_range(std::vector<double> &nums){
 
 vector<double> read_file(string file_name){
     vector<double> nums;
-    std::ifstream file(file_name);
+    std::ifstream file(file_name.c_str());
     if(file.is_open()){
         double temp;
         while(file >> temp){
